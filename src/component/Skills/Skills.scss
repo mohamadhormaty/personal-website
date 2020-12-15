@@ -1,0 +1,52 @@
+$hover-color: #3498db;
+$bg-color: #17202a;
+
+.skills {
+  overflow: hidden;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $hover-color;
+  .skills-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
+      position: relative;
+      z-index: 997;
+    }
+  }
+  .skills-row {
+    direction: ltr;
+    margin-bottom: 1rem;
+    .progres {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .progres-bar {
+        width: 500px;
+        direction: ltr;
+      }
+    }
+    .skills-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        direction: ltr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills .skills-pic {
+    margin-bottom: 1rem;
+  }
+  .skills .skills-row .progres .progres-bar {
+    width: 300px;
+  }
+}

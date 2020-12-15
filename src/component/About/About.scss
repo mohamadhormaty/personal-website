@@ -1,0 +1,54 @@
+$hover-color: #3498db;
+$bg-color: #17202a;
+
+.about {
+  overflow: hidden;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $hover-color;
+  .about-pic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
+      position: relative;
+      z-index: 997;
+    }
+  }
+  .about-description {
+    min-width: 65%;
+    height: auto;
+    background-color: $bg-color;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    h2 {
+      direction: ltr;
+      text-align: left;
+    }
+    p {
+      direction: ltr;
+      text-align: left;
+      font-size: 1.2rem;
+    }
+    b {
+      color: $hover-color;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .about-pic {
+    margin-bottom: 1rem;
+  }
+}
